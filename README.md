@@ -1,4 +1,4 @@
-# TopupBuzz -Free Fire Top-Up Website
+# TopupBuzz - Free Fire Top-Up Website
 
 A fully functional Free Fire top-up platform built with modern web technologies. This project provides a seamless and secure way for users to top up their Free Fire accounts, featuring a responsive design, admin dashboard, and secure payment integration.
 
@@ -26,9 +26,8 @@ The admin dashboard allows easy management of orders, users, and payments, makin
 
 ## 🖼️ Preview
 
-![Free Fire Top-Up Website Preview](./preview-image.png)
+![Free Fire Top-Up Website Preview](https://raw.githubusercontent.com/Shozon-Roy/topupbuzz/refs/heads/main/20250812_150326.jpg)
 
-*Note: Replace `./preview-image.png` with the actual path to your project screenshot.*
 
 ---
 
