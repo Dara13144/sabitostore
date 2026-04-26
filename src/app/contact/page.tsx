@@ -18,27 +18,27 @@ export default function ContactPage() {
   const contactOptions = [
     {
       icon: <Phone className="w-6 h-6 text-primary" />,
-      text: "আমাদের সাথে সরাসরি কথা বলতে এখানে ক্লিক করুন।",
+      text: "Click here to speak with us directly.",
       href: "tel:+1234567890"
     },
     {
       icon: <MessengerIcon/>,
-      text: "মেসেঞ্জারে লাইভ চ্যাটের জন্য এখানে ক্লিক করুন।",
+      text: "Click here for live chat on Messenger.",
       href: "https://m.me/your-messenger-id"
     },
     {
       icon: <WhatsAppIcon />,
-      text: "হোয়াটসঅ্যাপে লাইভ চ্যাটের জন্য এখানে ক্লিক করুন।",
+      text: "Click here for live chat on WhatsApp.",
       href: "https://wa.me/1234567890"
     },
     {
       icon: <Send className="w-6 h-6 text-primary" />,
-      text: "টেলিগ্রাম সাপোর্টে কথা বলার জন্য এখানে ক্লিক করুন।",
+      text: "Click here to talk to Telegram support.",
       href: "https://t.me/your-telegram-id"
     },
     {
       icon: <Mail className="w-6 h-6 text-primary" />,
-      text: "আমাদের সাপোর্টে ইমেইল করতে এখানে ক্লিক করুন।",
+      text: "Click here to email our support team.",
       href: "mailto:support@example.com"
     }
   ];
@@ -60,7 +60,7 @@ export default function ContactPage() {
       <main className="flex-grow container mx-auto p-4 sm:p-6 lg:p-8">
         <Card>
           <CardHeader>
-            <CardTitle className="text-center font-bangla">যোগাযোগ করুন</CardTitle>
+            <CardTitle className="text-center">Contact Us</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             {contactOptions.map((option, index) => (
@@ -72,13 +72,14 @@ export default function ContactPage() {
                 className="flex items-center gap-4 p-4 border rounded-lg hover:bg-muted transition-colors"
               >
                 {option.icon}
-                <span className="font-bangla text-sm">{option.text}</span>
+                <span className="text-sm">{option.text}</span>
               </a>
             ))}
           </CardContent>
         </Card>
       </main>
 
+      {/* Bottom Navigation Bar */}
       <div className="fixed bottom-0 left-0 right-0 bg-background/90 backdrop-blur-sm border-t border-border z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-around items-center h-16">
@@ -95,8 +96,8 @@ export default function ContactPage() {
               <span className="text-xs">TopUp</span>
             </Link>
             <Link href="/orders" className="flex flex-col items-center text-muted-foreground hover:text-primary">
-                <ShoppingCart className="w-6 h-6" />
-                <span className="text-xs">My Orders</span>
+              <ShoppingCart className="w-6 h-6" />
+              <span className="text-xs">My Orders</span>
             </Link>
             <Link href="/contact" className="flex flex-col items-center text-primary">
               <Blocks className="w-6 h-6" />
